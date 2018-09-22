@@ -29,7 +29,9 @@
       "en"
     ],
     "clientFramework": "angularX",
-    "jhiPrefix": "jhi"
+    "jhiPrefix": "jhi",
+    "herokuAppName": "sushihouse",
+    "herokuDeployType": "git"
   },
   "git-provider": "GitHub",
   "git-company": "suxaryk",
