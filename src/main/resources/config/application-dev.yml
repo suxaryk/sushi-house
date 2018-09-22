@@ -35,9 +35,9 @@ spring:
         serialization.indent_output: true
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:mysql://localhost:3306/sushihouse?useUnicode=true&characterEncoding=utf8&useSSL=false
-        username: root
-        password: root
+        url: jdbc:postgresql://localhost:5432/sushihouse
+        username: postgres
+        password: postgres
         hikari:
             auto-commit: false
             data-source-properties:
@@ -46,8 +46,8 @@ spring:
                 prepStmtCacheSqlLimit: 2048
                 useServerPrepStmts: true
     jpa:
-        database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
-        database: MYSQL
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
+        database: POSTGRESQL
         show-sql: false
         properties:
             hibernate.id.new_generator_mappings: true
